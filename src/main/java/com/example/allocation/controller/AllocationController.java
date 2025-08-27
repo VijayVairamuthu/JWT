@@ -21,5 +21,6 @@ public class AllocationController {
     public ResponseEntity<AllocationResponse> assign(@Valid @RequestBody AllocationRequest request) {
         AllocationResponse response = allocationService.allocate(request);
         return ResponseEntity.ok(response);
+        // demo
     }
 }
