@@ -1,0 +1,17 @@
+-- Sample data from the assessment prompt
+INSERT INTO task (id, cust_id, current_runner, status, latitude, longitude, alloc_time, accept_time, create_time) VALUES
+(1, 1001, NULL, 'READY', 13.0200, 80.0300, NULL, NULL, '2025-06-24 10:00:00'),
+(2, 1002, NULL, 'READY', 13.0400, 80.0600, NULL, NULL, '2025-06-24 10:00:00'),
+(3, 1003, NULL, 'READY', 13.0600, 80.0900, NULL, NULL, '2025-06-24 10:00:00'),
+(4, 2001, NULL, 'CANCEL', 13.0250, 80.0350, NULL, NULL, '2025-06-24 10:00:00'),
+(5, 2002, NULL, 'CANCEL', 13.0350, 80.0450, NULL, NULL, '2025-06-24 10:00:00'),
+(6, 2003, NULL, 'CANCEL', 13.0500, 80.0700, NULL, NULL, '2025-06-24 10:00:00'),
+(7, 2004, NULL, 'CANCEL', 13.0650, 80.0950, NULL, NULL, '2025-06-24 10:00:00'),
+(8, 3001, NULL, 'INACTIVE', 13.0100, 80.0200, NULL, NULL, '2025-06-24 10:00:00'),
+(9, 3002, NULL, 'INACTIVE', 13.0700, 80.1000, NULL, NULL, '2025-06-24 10:00:00'),
+(10, 3003, NULL, 'INACTIVE', 13.0800, 80.1100, NULL, NULL, '2025-06-24 10:00:00');
+
+INSERT INTO runner (id, task_id, username, latitude, longitude, create_time) VALUES
+(1, NULL, 'runner1', 13.0200, 80.0300, '2025-06-24 10:00:00'),
+(2, NULL, 'runner2', 13.0300, 80.0400, '2025-06-24 10:00:00'),
+(3, NULL, 'runner3', 13.0500, 80.0500, '2025-06-24 10:00:00');
